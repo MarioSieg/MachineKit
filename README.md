@@ -10,7 +10,7 @@
 
 <h2>SSE instruction encoding example</h2>
 
-<h3>1. Encode some instructions from C:</h3>
+<h3>1. Encode some instructions from C</h3>
 
 ```c
 #include "X86_64.h"
@@ -36,8 +36,8 @@ int main() {
 }
 ```
 
-<h3>2. Machine code is generated:</h3>
-<h4>And can be then executed (requires mmap etc..) or printed as C string literal (X64_machine_buf_dump_c):</h4>
+<h3>2. Machine code is generated</h3>
+<h4>And can be then executed (requires mmap etc..) or printed as C string literal (X64_machine_buf_dump_c)</h4>
 
 ```c
 const char *machine_code = { /* N = 35 */
@@ -48,7 +48,8 @@ const char *machine_code = { /* N = 35 */
   "\x0f\x5d\xc3"
 };
 ```
-<h3> Disassembled machine code from above: </h3>
+<h3> Disassembled machine code </h3>
+<h4> Note: The operands are reversed because of AT&T syntax. </h4>
 
 ```asm
     Address        | Machine Language |     Assembly
