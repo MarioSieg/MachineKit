@@ -11,6 +11,7 @@
 <h2>SSE instruction encoding example</h2>
 
 <h3>1. Encode some instructions from C:</h3>
+
 ```c
 #include "X86_64.h"
 
@@ -37,6 +38,7 @@ int main() {
 
 <h3>2. Machine code is generated:</h3>
 <h4>And can be then executed (requires mmap etc..) or printed as C string literal (X64_machine_buf_dump_c):</h4>
+
 ```c
 const char *machine_code = { /* N = 35 */
   "\x44\x0f\x58\xc7\xf3\x44\x0f\x5c"
